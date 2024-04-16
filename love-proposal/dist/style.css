@@ -3,7 +3,21 @@ body {
     margin: 0px;
     height: 100%;
 }
-
+.inner{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(247, 127, 147)
+}
+.alert {
+    padding: 15px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none; /* Initially hide the alert */
+}
 .bg_heart {
     position: relative;
     top: 0;
@@ -82,4 +96,13 @@ body {
     0% {
         top: 110%
     }
+}
+.foot{
+    width: 100%;
+    height: 25px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
 }
