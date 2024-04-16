@@ -3,52 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-
-
-
-    <title>Praveen- love proposal</title>
-
-
+    <title>Praveen Narayanan</title>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
-
-
     <audio autoplay id="ID">
-    <source src="music.mp3" >
-</audio>
+        <source src="music.mp3">
+    </audio>
 
-    <!-- partial:index.partial.html -->
-    <html>
+    <div class="alert"></div>
+    <div class="bg_heart"></div>
+    <div class="container">
+        <h2 id="text1"></h2>
+    </div>
 
-    <head>
-        <title>love you</title>
-    </head>
-
-    <body>
-
-        <div class="bg_heart">
-        </div>
-
-        <div class="container">
-
-
-            <h2 id="text1"></h2>
-
-
-        </div>
-
-
-
-    </body>
-
-    </html>
-    <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/f05ddb7d5e.js" crossorigin="anonymous"></script>
+    <footer class="foot">
+        <div class="inner">
+            <i class="fa-solid fa-heart-pulse"></i>Praveen
+        </div>
+    </footer>
 
+    <script>
+        // Function to set the alert message and display it
+        function showAlert(message) {
+            var alertBox = document.querySelector('.alert');
+            alertBox.textContent = message; // Set the message
+            alertBox.style.display = 'block'; // Display the alert
+        }
+
+        // Example usage
+        showAlert('This is an alert message!');
+    </script>
 </body>
 
 </html>
